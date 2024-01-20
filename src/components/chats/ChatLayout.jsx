@@ -44,7 +44,7 @@ const ChatLayout = ({ loading, errorHappened }) => {
     <div className="space-y-4">
       {!chatData.length 
       ? 
-      <div className='text-gray-800 bg-slate-200 p-2 rounded-md text-center'>Hey user! As your personal healthcare how can we assist you today?</div>
+      <div className='text-gray-800 bg-slate-200 p-2 rounded-md text-center'>Hey user! As your personal healthcare assistant how can we assist you today?</div>
       :
        chatData.map(({ text, response, index }) => (
         <div key={index} className="flex flex-col">

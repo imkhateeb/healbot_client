@@ -116,14 +116,14 @@ function InputLayout({ loading, setLoading, setErrorHappened, setResponse }) {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button
+      {!text.length ? "" : <button
         type='button'
         className='bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 px-3'
         onClick={() => handleClick(text)}
         disabled={loading || !text}
       >
         <RiSendPlane2Fill />
-      </button>
+      </button>}
 
       <button
         className='bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 px-3'
